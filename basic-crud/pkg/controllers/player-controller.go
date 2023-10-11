@@ -10,7 +10,7 @@ import (
 
 func GetAllPlayers(w http.ResponseWriter, req *http.Request) {
 	players := datastore.GetAllPlayers()
-	w.Header().Add("Content-Type", "pkglication/json")
+	w.Header().Add("Content-Type", "application/json")
 
 	res, err := json.Marshal(players)
 	if err != nil {
