@@ -6,5 +6,5 @@ import (
 )
 
 var RegisterTeamRoutes = func(basePath string, router *mux.Router) {
-	router.HandleFunc("/get", controllers.GetAllTeams).Methods("GET")
+	router.HandleFunc(basePath, controllers.GetAllTeams).Methods("GET")
 }

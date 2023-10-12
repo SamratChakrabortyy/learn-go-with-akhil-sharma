@@ -1,6 +1,6 @@
 package models
 
-type Players struct {
+type Player struct {
 	Id          int    `json:"id"`
 	Name        string `json:"name"`
 	JersyNumber string `json:"jersyNumber"`

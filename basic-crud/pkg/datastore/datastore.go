@@ -2,7 +2,7 @@ package datastore
 
 import "github.com/SamratChakrabortyy/learn-go-with-akhil-sharma/basic-crud/pkg/models"
 
-var players map[int]*models.Players = make(map[int]*models.Players)
+var players map[int]*models.Player = make(map[int]*models.Player)
 
 var teams map[int]*models.Team = make(map[int]*models.Team)
 
@@ -25,13 +25,13 @@ func initTeams() {
 }
 
 func initPlayers() {
-	players[1] = &models.Players{
+	players[1] = &models.Player{
 		Id:      1,
 		Name:    "pla 1",
 		Country: "country 1",
 		Team:    teams[1],
 	}
-	players[2] = &models.Players{
+	players[2] = &models.Player{
 		Id:      2,
 		Name:    "pla 2",
 		Country: "country 2",
